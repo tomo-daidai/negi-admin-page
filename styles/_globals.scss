@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text: $ink;
+  --main-bg: $white;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text: $white;
+    --main-bg: $black;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  position: relative;
+  // font-family: 'Noto Sans JP', 'Helvetica', 'ヒラギノ角ゴ ProN', '游ゴシック', sans-serif;
+  color: var(--main-text);
+  background-color: var(--main-bg);
+
+  &.light-theme {
+    color: $ink;
+    background-color: $white;
+  }
+  &.dark-theme {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+ul {
+  list-style: none;
+}
