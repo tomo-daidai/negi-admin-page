@@ -1,7 +1,9 @@
+import styles from '../styles/Header.module.scss'
+
 const Header = () => {
   return (
-    <header>
-      HEADER AERA
+    <header className={styles.container}>
+      <div>HEAD</div>
     </header>
   )
 }
