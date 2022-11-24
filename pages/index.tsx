@@ -1,12 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { Fragment } from 'react'
+import { Header } from '../components'
 
 const Home = () => {
   return (
-    <div className={styles.container}>
-      HELLO WORLD
-    </div>
+    <Fragment>
+      <Header />
+      <div className={styles.container}>
+        HELLO WORLD
+      </div>
+    </Fragment>
   )
 
 
